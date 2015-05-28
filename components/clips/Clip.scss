@@ -1,0 +1,21 @@
+@import 'variables';
+
+.Clip--area {
+    display: block;
+    margin-bottom: 5px;
+    border: 1px dotted;
+    cursor: pointer;
+    .Clip__blue & {
+        border-color: rgba($clippings-blue, 0.5);
+    }
+    .Clip__orange &, .Clip__green & {
+        border-color: rgba($clippings-orange, 0.5);
+    }
+    // .Clip__green & {
+    //     border-top: 1px solid rgba(150, 150, 150, 0.15);
+    //     border-right: 0px solid rgba(200, 200, 200, 0.1);
+    //     border-bottom: 0px solid rgba(200, 200, 200, 0.1);
+    //     border-left: 1px solid rgba(150, 150, 150, 0.15);
+    //     box-shadow: 2px 2px 3px 1px rgba(10, 10, 10, 0.15);
+    // }
+}

@@ -1,0 +1,29 @@
+@import 'variables';
+
+.ClipToggle {
+	width: $clipdrop-size;
+    & > * {
+        margin-bottom: 5px;
+    }
+    .issuuicon-chevron-x {
+    	font-size: 15px;
+    	transform: rotate(45deg);
+    	transition: .2s ease-in-out;
+    }
+}
+
+.ClipToggle__active {
+	.issuuicon-chevron-x {
+    	transform: rotate(0);
+    }
+}
+
+.ClipToggle--cropToggle {
+	transition: transform 150ms ease-out, opacity 150ms ease-out;
+	opacity: 0;
+	transform: translateY(-40px) scale(0.2);
+	.ClipToggle__active & {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
